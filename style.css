@@ -68,5 +68,12 @@ body{
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
-    
+
+}
+
+footer{
+    background-color:brown;
+    color: white;
+    text-align: center;
+
 }
