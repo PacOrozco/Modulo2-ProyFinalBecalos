@@ -25,3 +25,24 @@ body{
 .nav-links li{
     padding-left: 20px;
 }
+
+.hero{
+    background-image: url(https://unamglobal.unam.mx/wp-content/uploads/2023/12/destacada-buena-taza-de-cafe-1024x605.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    }
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 25px;
+
+}
