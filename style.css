@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
 }
 
 .navbar{
@@ -12,38 +12,44 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: wheat;
+    background-color: rgb(119, 77, 77);
 }
 
 .nav-links{
-    list-style: none;
+    list-style:none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
 .nav-links li{
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .hero{
-    background-image: url(https://unamglobal.unam.mx/wp-content/uploads/2023/12/destacada-buena-taza-de-cafe-1024x605.jpg);
-    background-size: cover;
+    background-image: url(https://img.freepik.com/foto-gratis/arreglo-diferentes-tazas-cafe-vista-superior_23-2149514260.jpg);
+    background-size:contain;
     background-position: center;
-    text-align: center;
-    color: white;
-    padding: 100px 0;
+    color: black;
+    padding:50px;
+
     }
 
 .hero-content{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
 }
 
 .hero h2{
     font-size: 3rem;
     margin-bottom: 25px;
+    background-color: black;
+    color: white;
+}
+.hero p{
+    background-color: black;
+    color: white;
 
 }
 
@@ -59,14 +65,21 @@ body{
 }
 
 .product{
-    width: 300px;
+    width: 350px;
     margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.product:hover{
+    background-color: rgb(196, 161, 108);
+    transform: scale(1.1);
+    transform: rotate(5deg);
 }
 
 .product img{
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 280px;
+    object-fit:fill;
     margin-bottom: 10px;
 
 }
