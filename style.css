@@ -25,7 +25,11 @@ body{
 .nav-links li{
     padding-left: 50px;
 }
-
+/*cambiar color de links y quitar subrayado de links*/
+.nav-links li a{
+    color:white;
+    text-decoration: none;
+}
 .hero{
     background-image: url(https://img.freepik.com/foto-gratis/arreglo-diferentes-tazas-cafe-vista-superior_23-2149514260.jpg);
     background-size:contain;
@@ -50,8 +54,17 @@ body{
 .hero p{
     background-color: black;
     color: white;
-
 }
+
+.contenedor-boton{
+   margin-top:80px ; 
+}
+
+.boton{
+    padding: 15px;
+    border-radius: 20%;
+}
+
 
 .featured-products{
     padding: 50px;
@@ -72,8 +85,9 @@ body{
 
 .product:hover{
     background-color: rgb(196, 161, 108);
-    transform: scale(1.1);
-    transform: rotate(5deg);
+    transform: scale(1.5);
+    transform: rotate(2deg);
+    
 }
 
 .product img{
@@ -81,8 +95,49 @@ body{
     height: 280px;
     object-fit:fill;
     margin-bottom: 10px;
-
 }
+
+.Postres{
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.postre img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+/* seccion de personal imagenes y texto*/ 
+.equipo{
+    padding: 50px;
+    text-align: center;
+    background-color: oldlace;
+}
+
+.equipo-container{
+    display:flex ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.miembro{
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.miembro img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 footer{
     background-color:brown;
