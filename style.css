@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
     display: flex;
 }
 
+
 .nav-links li{
     padding-left: 50px;
 }
@@ -30,45 +32,59 @@ body{
     color:white;
     text-decoration: none;
 }
+
+.nav-links li a:hover{
+    color: rgb(196, 161, 108);
+}
+
 .hero{
     background-image: url(https://img.freepik.com/foto-gratis/arreglo-diferentes-tazas-cafe-vista-superior_23-2149514260.jpg);
     background-size:contain;
     background-position: center;
     color: black;
-    padding:50px;
-
+    height: 250px;
+    padding: 15px;
     }
 
 .hero-content{
     display: flex;
     flex-direction:column;
     align-items: center;
+    height: 100%;
 }
 
 .hero h2{
     font-size: 3rem;
-    margin-bottom: 25px;
-    background-color: black;
-    color: white;
+    margin-bottom: 5px;
+    color: black;
 }
 .hero p{
-    background-color: black;
-    color: white;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .contenedor-boton{
-   margin-top:80px ; 
+    margin-top:80px; 
 }
 
 .boton{
     padding: 15px;
-    border-radius: 20%;
+    border-radius: 10%;
+    color: white;
+    background-color: black;
+    transition: all 0.7s ease-in-out;
 }
 
+.boton:hover{
+    background-color: rgb(196, 161, 108);
+    transform: scale(1.2);
+}
 
 .featured-products{
     padding: 50px;
     text-align: center;
+    background-color: black;
 }
 
 .product-list{
@@ -85,9 +101,7 @@ body{
 
 .product:hover{
     background-color: rgb(196, 161, 108);
-    transform: scale(1.5);
-    transform: rotate(2deg);
-    
+    transform: scale(1.05);    
 }
 
 .product img{
@@ -97,9 +111,13 @@ body{
     margin-bottom: 10px;
 }
 
+
+
 .Postres{
     padding: 50px;
     text-align: center;
+    background-color: rgba(218,217,215,255);
+    color: rgba(218,217,215,255);
 }
 
 .grid-container{
@@ -113,11 +131,23 @@ body{
     height: 250px;
     object-fit: cover;
 }
+
+.postre:hover{
+    background-color: black;
+    transform: scale(1.05);
+}
+
+
 /* seccion de personal imagenes y texto*/ 
 .equipo{
     padding: 50px;
     text-align: center;
-    background-color: oldlace;
+    background-color: black;
+}
+
+.equipo h2{
+    color: white;
+    padding-bottom: 20px;
 }
 
 .equipo-container{
@@ -129,19 +159,58 @@ body{
 .miembro{
     width: 200px;
     margin-bottom: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.miembro:hover{
+    background-color: rgb(196, 161, 108);
+    transform: scale(1.05);
 }
 
 .miembro img{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+    object-fit:cover;
+    background-color: black;
+}
+
+.Nosotros{
+    background-color: rgba(218,217,215,255);
+    text-align: center;
 }
 
 
-footer{
-    background-color:brown;
-    color: white;
-    text-align: center;
 
+footer{
+    color: white;
+    background-color: rgb(119, 77, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.social-media a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.footer-container p{
+    margin: 8px;
+}
+.newsletter{
+    margin: 10px;
+}
+
+.newsletter form{
+    padding: 10px;
 }
