@@ -81,6 +81,11 @@ body{
     transform: scale(1.2);
 }
 
+.boton a{
+    color:white;
+    text-decoration: none;
+}
+
 .featured-products{
     padding: 50px;
     text-align: center;
